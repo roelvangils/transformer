@@ -1,0 +1,13 @@
+{
+    "name": "transformer-api",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "bun run server.ts",
+        "dev": "bun run --watch server.ts"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "bun-types": "latest"
+    }
+}
