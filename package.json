@@ -1,0 +1,20 @@
+{
+    "name": "transformer",
+    "version": "1.0.0",
+    "description": "A Super Simple Text Transformer",
+    "main": "index.js",
+    "scripts": {
+        "start": "bun run server.js",
+        "dev": "bun run --watch index.js"
+    },
+    "keywords": [
+        "bun"
+    ],
+    "author": "Roel Van Gils",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {},
+    "engines": {
+        "bun": ">=1.0.0"
+    }
+}
