@@ -4,8 +4,8 @@
     "description": "A Super Simple Text Transformer",
     "main": "index.js",
     "scripts": {
-        "start": "bun run server.js",
-        "dev": "bun run --watch index.js"
+        "start": "bun run server.ts",
+        "dev": "bun run --watch server.ts"
     },
     "keywords": [
         "bun"
