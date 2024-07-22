@@ -1,5 +1,7 @@
+const port = process.env.PORT || 3000;
+
 const server = Bun.serve({
-  port: 3000,
+  port: port,
   async fetch(req) {
     const url = new URL(req.url);
     const path = url.pathname;
@@ -51,7 +53,7 @@ const server = Bun.serve({
   },
 });
 
-console.log(`Transformer API listening on http://localhost:${server.port}`);
+console.log(`Transformer API listening on http://0.0.0.0:${port}`);
 console.log("Available routes:");
 console.log("  POST /urlencode - URL encodes the input text");
 console.log("  POST /toupper - Converts the input text to uppercase");

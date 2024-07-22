@@ -1,20 +1,11 @@
-# Use the official Bun image as the base image
-FROM oven/bun:1.1.20
+FROM oven/bun:1.0.18
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json (if available)
-COPY package.json ./
-
-# Install dependencies
-RUN bun install
-
-# Copy the rest of the application code
 COPY . .
 
-# Expose the port your app runs on
+RUN bun install
+
 EXPOSE 3000
 
-# Command to run the application
 CMD ["bun", "run", "server.ts"]
